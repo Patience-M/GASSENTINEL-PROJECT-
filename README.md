@@ -1,105 +1,195 @@
-README
+# 🛡️ GasSentinel
+### Home-Based Gas Leak Detection and Mitigation System
 
-A HOME-BASED GAS LEAK DETECTION AND MITIGATION SYSTEM (GASSENTINEL)
+GasSentinel is an IoT-based smart home safety system designed to detect Liquefied Petroleum Gas (LPG) leaks in real time and automatically respond before a disaster occurs. The system not only alerts users but also actively mitigates gas leaks by shutting off the gas supply, activating ventilation, and sending emergency SMS notifications.
 
-Project Overview
+---
 
-GasSentinel is a smart home-based gas leak detection and mitigation system designed to enhance household safety by providing real-time detection of Liquefied Petroleum Gas (LPG) leaks. The system continuously monitors gas concentration levels and automatically initiates safety measures when a leak is detected, helping to prevent fires, explosions, and health hazards.
+## 📖 Overview
 
-Objectives
+Gas leaks are among the leading causes of household fires and explosions. Traditional gas detectors only notify users after a leak has occurred, requiring human intervention.
 
-- Detect LPG gas leaks in real time.
-- Alert users through audible and visual alarms.
-- Automatically mitigate gas leaks by activating safety mechanisms.
-- Improve household safety using affordable and reliable technology.
-- Reduce the risk of property damage and loss of life caused by gas leaks.
+GasSentinel provides a proactive solution by continuously monitoring gas concentrations and automatically initiating safety measures whenever dangerous gas levels are detected.
 
-Features
+---
 
-- Real-time LPG gas monitoring.
-- Automatic gas leak detection.
-- Audible buzzer alarm.
-- Visual LED warning indicators.
-- Automatic activation of an exhaust fan and gas shut-off mechanism.
-- LCD display for system status.
-- Low-cost and energy-efficient design.
+## ✨ Features
 
-Hardware Components
+- 🔥 Real-time LPG leak detection
+- 🚨 Audible buzzer alarm
+- 💡 LED visual warning indicators
+- 🔒 Automatic gas shut-off using a servo motor
+- 🌬️ Automatic exhaust fan activation
+- 📱 GSM-based SMS notifications
+- ⚡ Fast response time (<3 seconds)
+- 🏠 Designed for residential environments
+- 💰 Low-cost and scalable solution
+
+---
+
+## 🛠️ Hardware Components
 
 - Arduino Uno
 - MQ-2 Gas Sensor
+- GSM Module (SIM800L/SIM900)
 - Servo Motor
 - Exhaust Fan
 - Buzzer
 - LEDs
-- 16×2 LCD Display (I2C)
-- Breadboard
-- Jumper Wires
+- Relay Module
 - Power Supply
 
-Software Requirements
+---
+
+## 💻 Software Used
 
 - Arduino IDE
-- C/C++ Programming Language
-- Required Arduino Libraries:
-  - Wire.h
-  - LiquidCrystal_I2C.h
-  - Servo.h
+- Wokwi Simulator
+- C/C++
+- Embedded Systems Programming
 
-System Operation
+---
 
-1. The MQ-2 sensor continuously monitors LPG concentration.
-2. When gas levels exceed the predefined threshold, the Arduino processes the sensor data.
-3. The buzzer and warning LEDs are activated to alert occupants.
-4. The servo motor automatically closes the gas valve.
-5. The exhaust fan turns on to improve ventilation.
-6. The LCD displays the current system status and gas leak warning.
+## ⚙️ System Workflow
 
-Installation
+1. MQ-2 sensor continuously monitors LPG concentration.
+2. Arduino processes sensor readings.
+3. Warning gas levels trigger:
+   - LED indicators
+   - Buzzer alarm
+4. Dangerous gas levels trigger:
+   - Automatic gas shut-off
+   - Exhaust fan activation
+   - SMS notification to the homeowner
 
-1. Assemble the hardware components according to the circuit diagram.
-2. Install the Arduino IDE.
-3. Install the required Arduino libraries.
-4. Upload the GasSentinel program to the Arduino Uno.
-5. Power the system and verify proper operation.
+---
 
-Testing
+## 📂 Repository Structure
 
-The system should be tested by exposing the MQ-2 sensor to a controlled LPG source. Verify that:
+```
+GasSentinel/
+│
+├── Arduino_Code/
+├── Circuit_Diagram/
+├── Simulation/
+├── Documentation/
+├── Images/
+├── README.md
+└── LICENSE
+```
 
-- Gas is detected correctly.
-- The buzzer sounds.
-- Warning LEDs illuminate.
-- The servo closes the gas valve.
-- The exhaust fan activates.
-- The LCD displays the appropriate warning message.
+---
 
-Project Structure
+## 🚀 Getting Started
 
-- "/Source_Code" – Arduino program files.
-- "/Circuit_Diagram" – System wiring diagrams.
-- "/Documentation" – Project report and related documentation.
-- "/Images" – System photographs and screenshots.
-- "/Libraries" – Required Arduino libraries (if included).
+### Requirements
 
-Future Improvements
+- Arduino IDE
+- Arduino Uno
+- MQ-2 Gas Sensor
+- GSM Module
+- Servo Motor
+- Required electronic components
 
-- Integration with IoT for remote monitoring.
-- SMS and mobile application notifications.
-- Cloud-based data logging.
-- Battery backup for power outages.
-- Mobile dashboard for real-time system monitoring.
+### Installation
 
-Authors
+1. Clone the repository.
 
-This project was developed as part of an academic research project titled:
+```bash
+git clone https://github.com/yourusername/GasSentinel.git
+```
 
-A Home-Based Gas Leak Detection and Mitigation System (GasSentinel).
+2. Open the Arduino project in Arduino IDE.
 
-License
+3. Install the required libraries.
 
-This project is intended for academic and research purposes. Users are free to study, modify, and improve the system with appropriate acknowledgment of the original work.
+4. Connect the hardware according to the circuit diagram.
 
-Acknowledgement
+5. Upload the code to the Arduino Uno.
 
-We sincerely thank our supervisors, lecturers, colleagues, and all individuals who provided guidance, technical support, and encouragement throughout the development of the GasSentinel project. Above all, we thank the Almighty God for His grace, wisdom, and strength that made the successful completion of this project possible.
+6. Test the system using LPG or the Wokwi simulator.
+
+---
+
+## 🧪 Testing
+
+The system has been tested for:
+
+- Gas detection accuracy
+- Response time
+- Automatic mitigation
+- SMS notification
+- Hardware reliability
+
+---
+
+## 📊 Project Objectives
+
+- Detect LPG leaks in real time.
+- Automatically shut off the gas supply.
+- Activate ventilation.
+- Notify homeowners via SMS.
+- Improve household safety using affordable IoT technology.
+
+---
+
+## 🌍 Applications
+
+- Homes
+- Apartments
+- Student hostels
+- Restaurants
+- Small businesses
+- Kitchens
+
+---
+
+## 📸 Future Improvements
+
+- Mobile application
+- Wi-Fi/Cloud monitoring
+- Machine learning for false alarm reduction
+- Battery backup
+- Mobile dashboard
+- Multiple gas sensor support
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+Feel free to fork the repository, submit pull requests, or open issues to improve the project.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Authors
+
+**Mukisa Patience**
+
+**Aywee Innocent**
+
+Department of Computer Science
+
+Gulu University
+
+---
+
+## 🙏 Acknowledgements
+
+Special thanks to:
+
+- Gulu University
+- Department of Computer Science
+- Project Supervisor Mr Abandu Jackson 
+- Everyone who supported the development and testing of GasSentinel.
+
+---
+
+⭐ If you found this project useful, please consider giving it a **Star** on GitHub!
