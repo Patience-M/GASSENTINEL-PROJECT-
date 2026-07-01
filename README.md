@@ -1,19 +1,18 @@
-# 🛡️ GasSentinel
+# GasSentinel
 ### Home-Based Gas Leak Detection and Mitigation System
 
 GasSentinel is an IoT-based smart home safety system designed to detect Liquefied Petroleum Gas (LPG) leaks in real time and automatically respond before a disaster occurs. The system not only alerts users but also actively mitigates gas leaks by shutting off the gas supply, activating ventilation, and sending emergency SMS notifications.
 
 ---
 
-## 📖 Overview
+## Overview
 
 Gas leaks are among the leading causes of household fires and explosions. Traditional gas detectors only notify users after a leak has occurred, requiring human intervention.
 
 GasSentinel provides a proactive solution by continuously monitoring gas concentrations and automatically initiating safety measures whenever dangerous gas levels are detected.
 
----
 
-## ✨ Features
+## Features
 
 - 🔥 Real-time LPG leak detection
 - 🚨 Audible buzzer alarm
@@ -27,7 +26,7 @@ GasSentinel provides a proactive solution by continuously monitoring gas concent
 
 ---
 
-## 🛠️ Hardware Components
+## Hardware Components
 
 - Arduino Uno
 - MQ-2 Gas Sensor
@@ -41,7 +40,7 @@ GasSentinel provides a proactive solution by continuously monitoring gas concent
 
 ---
 
-## 💻 Software Used
+## Software Used
 
 - Arduino IDE
 - Wokwi Simulator
@@ -50,7 +49,7 @@ GasSentinel provides a proactive solution by continuously monitoring gas concent
 
 ---
 
-## ⚙️ System Workflow
+## System Workflow
 
 1. MQ-2 sensor continuously monitors LPG concentration.
 2. Arduino processes sensor readings.
@@ -61,26 +60,6 @@ GasSentinel provides a proactive solution by continuously monitoring gas concent
    - Automatic gas shut-off
    - Exhaust fan activation
    - SMS notification to the homeowner
-
----
-
-## 📂 Repository Structure
-
-```
-GasSentinel/
-│
-├── Arduino_Code/
-├── Circuit_Diagram/
-├── Simulation/
-├── Documentation/
-├── Images/
-├── README.md
-└── LICENSE
-```
-
----
-
-## 🚀 Getting Started
 
 ### Requirements
 
@@ -111,7 +90,7 @@ git clone https://github.com/yourusername/GasSentinel.git
 
 ---
 
-## 🧪 Testing
+## Testing
 
 The system has been tested for:
 
@@ -123,7 +102,7 @@ The system has been tested for:
 
 ---
 
-## 📊 Project Objectives
+## Project Objectives
 
 - Detect LPG leaks in real time.
 - Automatically shut off the gas supply.
@@ -133,7 +112,7 @@ The system has been tested for:
 
 ---
 
-## 🌍 Applications
+## Applications
 
 - Homes
 - Apartments
@@ -144,7 +123,7 @@ The system has been tested for:
 
 ---
 
-## 📸 Future Improvements
+## Future Improvements
 
 - Mobile application
 - Wi-Fi/Cloud monitoring
@@ -152,20 +131,6 @@ The system has been tested for:
 - Battery backup
 - Mobile dashboard
 - Multiple gas sensor support
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!
-
-Feel free to fork the repository, submit pull requests, or open issues to improve the project.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ---
 
